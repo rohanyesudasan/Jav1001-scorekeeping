@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Score Keeping App</string>
+
+    <!-- Spinner Values -->
+
+    <string-array name="scoring_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+</resources>

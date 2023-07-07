@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- This xml file is created to change the shape of the button style -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/Grey"/>
+            <corners android:radius="60dp"/>
+        </shape>
+    </item>
+</selector>

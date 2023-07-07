@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Linear Layout created for the layout display -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--Linear Layout created to display two team names-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center">
+
+        <!--Text view created for the first team -->
+        <TextView
+            android:id="@+id/team1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="INDIA"
+            android:textColor="@color/red"
+            android:background="@color/black"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
+
+        <!--Text view created for the second team -->
+        <TextView
+            android:id="@+id/team2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="AUSTRALIA"
+            android:textColor="@color/red"
+            android:background="@color/black"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+    <!-- Linear layout for the 2 team scores -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center">
+
+        <!--Text view created to show the score of first team -->
+        <TextView
+            android:id="@+id/team1_score"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="0"
+            android:background="@color/Yellow"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
+
+        <!-- Drop down box to change the scores of the first team-->
+        <Spinner
+            android:id="@+id/score1_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:entries="@array/scoring_options" />
+
+        <!--Text view created to show the score of second team -->
+        <TextView
+            android:id="@+id/team2_score"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="0"
+            android:background="@color/Yellow"
+            style="@style/MyTextView"
+            android:textSize="25sp"/>
+
+        <!-- Drop down box to change the scores of the second team-->
+        <Spinner
+            android:id="@+id/score2_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:entries="@array/scoring_options" />
+
+    </LinearLayout>
+
+    <!-- space is used for visual enhancement-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <!--Linear Layout created to develop toggle switch that helps to switch between teams -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--Toggle button to switch between teams so that we can change scores of both teams -->
+        <Switch
+            android:id="@+id/team_toggle_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch Teams"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <!-- Space is used for visual separation that is to leave space  -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <!-- Linear Layout for increment/decrement button -->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--Buttons to increase the scores -->
+        <Button
+            android:id="@+id/team_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:padding="10dp"
+            android:background="@drawable/shape_circle"/>
+
+        <!--Buttons to decrease the scores -->
+        <Button
+            android:id="@+id/team_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:padding="10dp"
+            android:background="@drawable/shape_circle"/>
+
+    </LinearLayout>
+
+</LinearLayout>
